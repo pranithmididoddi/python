@@ -17,3 +17,5 @@ myset=set([3,2,1])
 myset.add(3)
 print type(myset)
 print myset
+
+#more about numpy and scipy before i sleep

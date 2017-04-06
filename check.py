@@ -34,3 +34,15 @@ fruits = ["banana", "apple", "mango"]
 for fruit in fruits:
     print("the fruit is: ", fruit)
 
+
+#Factorial to start of with
+
+def factorial_calculation(x):
+    if x==1:
+        return 1
+    else:
+        return (x*factorial_calculation(x-1))
+
+num=5
+print("The factorial of ",num," is: ",factorial_calculation(num))
+

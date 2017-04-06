@@ -18,4 +18,19 @@ myset.add(3)
 print type(myset)
 print myset
 
-#more about numpy and scipy before i sleep
+# Loops in python
+
+count = 0
+while (count < 9):
+    print ("The count is:", count)
+    count = count + 1
+
+print("This is while")
+
+for letter in 'pranith':
+    print ("Current letter is: ", letter)
+
+fruits = ["banana", "apple", "mango"]
+for fruit in fruits:
+    print("the fruit is: ", fruit)
+

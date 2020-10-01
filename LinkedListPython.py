@@ -1,3 +1,35 @@
+class Node:
+	def __init__(self, data=None, next=None):
+		self.data = data
+		self.next = next
+
+class LinkedList:
+	def __init__(self):
+		self.head = None
+
+	def traverse(self):
+		printvalue = self.head
+		while printvalue is not None:
+			print(printvalue.data)
+			printvalue = printvalue.next
+
+	def insertAtBegining(self, head):
+		newNode = Node(head)
+
+		# updating the node
+		newNode.next = self.head
+		self.head = newNode
+
+	def insertAtEnd(self, newNode):
+		newNode = Node(5)
+		if self.head is None:
+			self.head = newNode
+			return
+		lastnode = self.head
+		while (lastnode.next):
+			lastnode = lastnode.next
+		lastnode.next = newNode
+        
 class Solution(object):
     #find if the linkedlist has a cycle or not
     def hasCycle(self, head):
